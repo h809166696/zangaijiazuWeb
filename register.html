@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册账号</title>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/lib.js">
+			
+		</script>
+		<script type="text/javascript" src="js/register.js">
+			
+		</script>
+		<script type="text/javascript" src="js/spin.js">
+			
+		</script>
+		<script type="text/javascript" src="js/modernizr.js">
+			
+		</script>
+	   <style type="text/css">
+	   	*{
+	   		padding: 0px;
+	   		margin: 0px;
+	   		
+	   	}
+	  
+	   	input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+	   	.naviHeader
+	   	{
+	   		width: 100%;
+	   		background-color: #0e68c5;
+	   		height: 70px;
+	   		min-width: 1000px;
+	   	}
+	   	.naviHeader .title
+	   	{
+	   		text-align: center;
+	   		line-height: 70px;
+	   		font-family: "agency fb";
+	   		font-size: 25px;
+	   		color: white;
+	   	}
+	   	table
+	   	{
+	   		color: #464646;
+	   		    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    margin: 0 auto;
+    min-width: 600px;
+    margin-top: 100px;
+    overflow: hidden;
+	   	}
+	   	
+	   	table tr
+	   	{
+	   	height: 54px;
+	   display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+	   	}
+	   	tr td
+	   	{
+	     position: relative;
+	   		border: none;
+	   	}
+	  table td.field i {
+    font-style: normal;
+    font-size: 14px;
+    color: #ff0000;
+    margin-right: 8px;
+    font-family: "SimSun";
+    vertical-align: middle;
+}
+table td {
+    padding-top: 14px;
+    font-size: 14px;
+}
+.ipt {
+    width: 300px;
+    padding: 9px;
+}
+.tip {
+    font-size: 12px;
+    position: relative;
+    z-index: 100;
+    left: 10px;
+    display: none;
+    color: #b2b2b2;
+    padding-left: 20px;
+    line-height: 14px;
+    padding-top: 1px;
+    width: 100px;
+}
+.error {
+
+   
+    line-height: 15px;
+    display: none;
+    color: #f12222;
+    font-size: 12px;
+    min-height: 15px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.subbtn {
+    text-decoration: none;
+    display: inline-block;
+    background: #7ab6f5;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 7px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    background-color: #e6e6e6;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #666666;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #2d97f9;
+    border-color: #2d97f9;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.bottom_login {
+    font-size: 12px;
+    color: #999999;
+}
+
+.fr {
+    float: right;
+}
+.chooseSex{
+	box-sizing: border-box;
+	margin: 20px;
+	
+}
+	   </style>
+	</head>
+	<body>
+		<div class="naviHeader">
+			<p class="title">十秒钟完成注册！加入Family</p>
+		</div>
+		<div class="content">
+	    <table id="registerTable">
+	    	<tr>
+                        <td class="field"><i>*</i>昵&nbsp;&nbsp;&nbsp;称：</td>
+                        <td><input type="text" class="ipt valid" tabindex="2" name="" id="nickName" placeholder="请输入昵称" value=""></td>
+                        <td>
+                            <div class="tip" >随便输啊，重复了会提示你</div>
+                        <label for="email" class="error" >重复了，兄弟</label></td>
+                    </tr>
+	    	<tr>
+                        <td class="field"><i>*</i>用户名：</td>
+                        <td><input type="text" class="ipt" tabindex="2" name="username" id="username" placeholder="请输入账号" autocomplete="off" value=""></td>
+                       <td>
+                            <div class="tip">3-14个字符，支持中英文、数字及下划线</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="field"><i>*</i>密&nbsp;&nbsp;&nbsp;码：</td>
+                        <td><input placeholder="" type="password" class="ipt" tabindex="3" name="password" placeholder="请输入密码" id="password" autocomplete="off" value=""></td>
+                        <td class="has_tip">
+                            <div class="tip tip_t">
+                                <div class="boxinfo">
+                                    <i class="jiao"></i>
+                                    <p class="one"><i></i><em>长度6~16位</em></p>
+                                    <p class="two"><i></i><em>支持数字，大小写字母和半角标点符号</em></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="field"><i>*</i>确认密码：</td>
+                        <td><input placeholder="" type="password" class="ipt" name="repassword" id="repassword" placeholder="请再次输入密码" tabindex="4"></td>
+                        <td>
+                            <div class="tip">请再次输入密码</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="field"><i>*</i>性别：</td>
+                        <td><input class="chooseSex" type="radio" name="sex" sexType = "1"/>男
+<input type="radio"  class="chooseSex" name="sex" sexType = "0"/>女<input type="radio" class="chooseSex" checked="checked" name="sex" sexType = "2"/>人妖</td>
+                        <td>
+                            <div class="tip">请选择性别</div>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td><input type="submit" class="subbtn btn btn-primary" value="注册" id="regsub" onclick="registerButtonClick()"></td>
+                    <td>
+                        <span class="tip">&nbsp;</span>
+                                        </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span class="fr bottom_login">已有帐号，<a href="login.html">立即登录&gt;&gt;</a></span></td>
+                <td></td>
+            </tr>
+	    </table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,277 @@
+.content{
+	position: relative;
+}
+.articleUl
+{
+	list-style: none;
+	 padding-top: 40px;
+}
+.articleUl>li
+{
+	width: 100%;
+	min-height: 250px;
+	border-bottom: 2px solid #dddddd;
+	overflow: hidden;
+}
+li .article_title
+{
+	 font-weight: bold;
+	 font-size: 16px;
+	 margin-top: 10px;
+	 width: 100%;
+	 text-indent: 2em;
+	 font-family: "微软雅黑";
+}
+li .userMessageDiv
+{
+	 float: left;
+	 width: 250px;
+	 height: 250px;
+	 text-align: center;
+}
+.userMessageDiv .article_userImg
+{
+	width: 150px;
+	height: 150px;
+	margin-top: 40px;
+	
+}
+.userMessageDiv .article_userName
+{
+	white-space: nowrap;
+	 overflow: hidden;
+    text-overflow: ellipsis;
+	
+	width: 250px;
+	 margin-top: 10px;
+	 text-align: center;
+	 font-family: "微软雅黑";
+	 
+}
+.article_contentDiv
+{
+	float: right;
+	width: calc(100% - 250px);
+	 margin-top: 40px;
+	 padding-left: 25px;
+	 box-sizing: border-box;
+	 position: relative;
+}
+.articleDetail_contentDiv
+{
+	min-height: 200px;
+}
+.article_contentDiv .article_content
+{
+	text-indent: 2em;
+	word-wrap: break-word;
+
+}
+.article_contentDiv #article_replyButton
+{
+	/*position: absolute;*/
+	float: right;
+	color: #0090dc;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.article_contentDiv .article_timeP
+{
+	/*position: absolute;*/
+	float: right;
+	color: #8a8a8a;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.article_contentDiv .replyUl
+{
+	list-style: none;
+	clear: both;
+}
+.article_contentDiv .articleDetail_imgDiv
+{
+	 width: 100%;
+	 height: 240px;
+	 margin-top: 15px;
+}
+.articleDetail_imgDiv img
+{
+	width: calc(33.33% - 10px);
+	float: left;
+	height: 200px;
+	margin-left: 10px;
+}
+.replyUl li .replyUserP
+{
+	font-size: 14px;
+	color: #9a9a9a;
+	display: inline-block;
+}
+.replyUserP span
+{
+	color: #00b7f3;
+}
+.replyUl li
+{
+	background-color: #f3f3f3;
+	border-bottom: 3px solid #ffffff;
+}
+.replyUl li  .replyContent
+{
+	margin-left: 8px;
+	color: black;font-size: 14px;
+	 display: inline;
+	text-align: justify;
+}
+.replyUl li .replyA
+{
+	text-decoration: none;
+	color: #00b7f3;
+	margin-left:4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.replyUl li .timeSpan
+{
+	margin-left: 15px;
+	font-size: 14px;
+	color: #9a9a9a;
+	
+}
+
+.writeArticleDiv{
+	margin-top: 50px;
+	padding-bottom: 50px;
+	clear: both;
+}
+.writeArticleDiv .titleDiv
+{
+	width: 800px;
+	height: 40px;
+}
+.writeArticleDiv .titleDiv input
+{
+	width: 100%;
+	height: 100%;
+}
+.writeArticleDiv .contentDiv
+{
+	margin-top: 20px;
+	width: 800px;
+	height: 300px;
+}
+.writeArticleDiv .contentDiv textarea
+{
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+.writeArticleDiv .commitArticleButton
+{
+	margin-left: 240px;
+}
+.writeArticleDiv .choosePictureDiv{
+	margin-top: 20px;
+	height: 140px;
+	width: 800px;
+	
+}
+.writeArticleDiv .choosePictureDiv  .imgDiv
+{
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	margin-left: 20px;
+ 
+	position: relative;
+}
+.writeArticleDiv .choosePictureDiv  .imgDiv .chooseImg
+{
+	width: 120px;
+	height: 120px;
+}
+.writeArticleDiv .choosePictureDiv  .inputFileDiv
+{
+	position:relative;width:120px;
+	display: inline-block;
+	position: relative;
+}
+.writeArticleDiv .choosePictureDiv .imgDiv .deleteButton
+{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	background-image: url(../img/delete.png);
+	width: 25px;
+	background-size:100% 100% ;
+	outline: none;
+	height: 25px;
+	top: 0px;
+	right: 0px;
+}
+.addPictureImg
+{
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #5a5a5a;
+}
+.file{ position:absolute; top:0; right:0px; height:100px; width: 100px; filter:alpha(opacity:0);opacity: 0;width:260px } 
+.writeArticleDiv .choosePictureDiv .inputFileDiv .tipLabel
+{
+	font-size: 13px;
+	color: #707070;
+}
+/*回复框*/
+.replyInput
+{
+	position: absolute;
+	width: 715px;
+	height: 24px;
+	top: 650px;
+   left: 270px;
+     display: none;
+}
+.replyInput .replyArea
+{
+	height: 24px;
+	font-size: 18px;
+	resize: none;
+	 float: left;
+	width: calc(100% - 40px);
+
+}
+.replyInput a{
+	text-decoration: none;
+    width: 38px;
+    text-align: center;
+    float: left;
+    background-color: #00b7f3;
+    height: 24px;
+  cursor: pointer;
+    color: white;
+}
+.pageDiv
+{
+	text-align: center;
+}
+.pageDiv span
+{
+	cursor: pointer;
+	color: blue;
+}
+.replypageDiv
+{
+	 display: none;
+}
+.replypageDiv span
+{
+	cursor: pointer;
+	color: blue;
+	font-size: 13px;
+}
+.replypageDiv span:first-child
+{
+	color: #8a8a8a;
+}

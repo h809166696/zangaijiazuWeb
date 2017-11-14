@@ -1,0 +1,430 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.content{
+	width: 1000px;
+	background-color: rgb(255,255,255);
+
+	 margin: 0 auto;
+     overflow: hidden;
+}
+.navigationBar
+{
+	position: fixed;
+	background-color: #0090dc;
+	width: 100%;
+	height: 40px;
+	min-width: 400px;
+	z-index: 9999;
+}
+/*.navigationBar p:first-child
+{
+	float: left;
+}
+.navigationBar P:last-child
+{
+	float: right;
+}*/
+.navigationBar img
+{
+	
+	float: left;
+	width: 200px;
+	height: 30px;
+	margin-top: 5px;
+	background-size:100% 100% ;
+}
+.loginUl{
+	list-style: none;
+	float: right;
+	margin-right: 30px;
+}
+.loginUl li{
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.loginUl li a
+{
+	text-decoration: none;
+	color: #ddd;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.loginUl li a:hover
+{
+	color: white;
+}
+.title
+{
+	color: white;
+	font-family: "黑体";
+	font-weight:100 ;
+	font-size: 18px;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+
+}
+.content{
+	padding-top: 40px;
+}
+.swiper-container
+{
+			width: 100%;
+			height: 500px;
+}
+.swiper-slide a{
+	text-decoration: none;
+	color: black;
+}
+.swiper-slide a img
+{
+	width: 100%;
+	height: 500px;
+   background-size:100% 100% ;
+}
+.hotArticle
+{
+	float: left;
+	width: 800px;
+}
+.swiper-pagination-bullet{background:#000}//设置未选中的颜色
+.swiper-pagination-bullet-active{background:#fff}//设置选中的颜色
+.swiper-pagination{
+	   text-align: right;
+}
+.secondDiv
+{
+	margin-top: 40px;
+}
+.hotArticle
+{
+	overflow: hidden;
+}
+.hotArticle .hotArticleTitle
+{
+	width: 800px;
+	height: 50px;
+	line-height: 50px;
+	font-family: "方正大黑简体";
+	font-weight:bold ;
+	font-size: 25px;
+	color: #0093dd;
+}
+.hotArticle .hotArticleTitle span
+{
+	  color: #c8c8c8;
+    font-size: 13px;
+    font-family: "微软雅黑";
+}
+.hotArticle .hotArticleTitle a
+{
+	    float: right;
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    text-decoration: none;
+}
+.hotArticle .articleDetailDiv{
+	text-decoration: none;
+	width: 800px;
+	 padding: 5px;
+	 border-bottom: 1px solid #e6e6e6;
+	 overflow: hidden;
+	 margin-top: 10px;
+}
+.articleDetailDiv .AuthorName
+{
+	float: right;
+	margin-right: 15px;
+	font-size: 14px;
+	color:rgb(112, 112, 112);
+	line-height: 40px;
+		font-family: "微软雅黑";
+}
+.articleDetailDiv .userHeadImg
+{
+	width: 40px;
+	height: 40px;
+	border-radius:20px ;
+	overflow: hidden;
+	background-size:100% 100%;
+	float: right;
+	margin-right: 5px;
+
+}
+.articleDetailDiv .articleTitle
+{
+	float: left;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight:bold ;
+	color: rgb(112, 112, 112);
+	
+}
+.articleDetailDiv .articleContent
+{
+	clear: both;
+	font-size: 14px;
+	color: #646464;
+	text-indent: 2em;
+	height: 20px;
+	margin-right: 25px;
+	text-overflow: ellipsis;
+	padding-top: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: calc(100% - 25px);
+	padding-bottom: 10px;
+}
+.articleDetailDiv .imgContentDiv
+{
+	width: 800px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.articleDetailDiv .imgContentDiv img{
+	width:250px;
+	height: 250px;
+	float: left;
+	margin-left: 15px;
+}
+.articleDetailDiv .timeAndDiscussDiv
+{
+	width: 800px;
+	clear: both;
+}
+.articleDetailDiv .timeAndDiscussDiv
+{
+	overflow: hidden;
+	border-bottom:1px solid #dddddd ;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+}
+.articleDetailDiv .timeAndDiscussDiv div
+{
+	float: right;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: #646464;
+	 height: 20px;
+	margin-right: 35px;
+	position: relative;
+}
+.articleDetailDiv .timeAndDiscussDiv div:first-child
+{
+	margin-right: 15px;
+}
+.articleDetailDiv .timeAndDiscussDiv div p
+{
+	display: inline;
+	line-height: 20px;
+	margin-left: 8px;
+	
+	
+}
+.articleDetailDiv .timeAndDiscussDiv div img
+{
+	position: absolute;
+	left: -20px;
+	top: 0px;
+	display: inline;
+	width: 19px;
+	height: 19px;
+	background-size:100% 100% ;
+
+}
+
+.hotMan{
+	float: right;
+	width: 200px;
+	border-left:20px solid #f1f1f1;
+	box-sizing: border-box;
+}
+.hotMan .hotArticleTitle
+{
+	width: 800px;
+	height: 50px;
+	line-height: 50px;
+	font-family: "方正大黑简体";
+	font-weight:bold ;
+	font-size: 25px;
+	color: #0093dd;
+	margin-left: 15px;
+}
+.hotMan .hotArticleTitle span
+{
+	  color: #c8c8c8;
+    font-size: 13px;
+    font-family: "微软雅黑";
+}
+.hotMan .zhaoHuanShiUl
+{
+	list-style: none;
+	
+}
+.zhaoHuanShiUl li
+{
+	width: 100%;
+	height: 80px;
+	margin-top: 20px;
+}
+a{
+	text-decoration: none;
+}
+.zhaoHuanShiUl li .zhaoHuanContent .zhaoHuanShiImg
+{
+	width: 60px;
+	height: 60px;
+	background-size:100% 100%;
+	float: left;
+	border-radius:30px ;
+}
+.zhaoHuanShiUl li .zhaoHuanContent .zhaoHuanShiName
+{
+	color: rgb(112,112,112);
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	margin-left: 68px;
+	height: 20px;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	width: calc(100% - 68px);
+	overflow: hidden;
+	white-space: nowrap;
+}
+.zhaoHuanShiUl li .zhaoHuanContent .jianJie
+{
+	color: #646464;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-left: 68px;
+	width: calc(100% - 68px);
+	height: 40px;
+	margin-top: 8px;
+}
+.zangAiFooter
+{
+	height: 80px;
+	margin-top: 20px;
+	background-color: #9f9f9f;
+	overflow: hidden;
+}
+.zangAiFooter p
+{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: arial;
+}
+.userDetailDiv
+{
+	float: right;
+	margin-right: 50px;
+	display: none;
+}
+.userDetailDiv img
+{
+	width: 30px;
+	height: 30px;
+	background-size:100% 100%;
+	display: inline-block;
+	 border-radius:15px;
+}
+.userDetailDiv p
+{
+	font-size: 13px;
+	color: white;
+	font-family: "微软雅黑";
+	display: inline-block;
+	line-height: 30px;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+.writeArticleDiv{
+	clear: both;
+}
+.writeArticleDiv .titleDiv
+{
+	width: 800px;
+	height: 40px;
+}
+.writeArticleDiv .titleDiv input
+{
+	width: 100%;
+	height: 100%;
+}
+.writeArticleDiv .contentDiv
+{
+	margin-top: 20px;
+	width: 800px;
+	height: 300px;
+}
+.writeArticleDiv .contentDiv textarea
+{
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+.writeArticleDiv .commitArticleButton
+{
+	margin-left: 240px;
+}
+.writeArticleDiv .choosePictureDiv{
+	margin-top: 20px;
+	height: 140px;
+	width: 800px;
+	
+}
+.writeArticleDiv .choosePictureDiv  .imgDiv
+{
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	margin-left: 20px;
+ 
+	position: relative;
+}
+.writeArticleDiv .choosePictureDiv  .imgDiv .chooseImg
+{
+	width: 120px;
+	height: 120px;
+}
+.writeArticleDiv .choosePictureDiv  .inputFileDiv
+{
+	position:relative;width:120px;
+	display: inline-block;
+	position: relative;
+}
+.writeArticleDiv .choosePictureDiv .imgDiv .deleteButton
+{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	background-image: url(../img/delete.png);
+	width: 25px;
+	background-size:100% 100% ;
+	outline: none;
+	height: 25px;
+	top: 0px;
+	right: 0px;
+}
+.addPictureImg
+{
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #5a5a5a;
+}
+.file{ position:absolute; top:0; right:0px; height:100px; width: 100px; filter:alpha(opacity:0);opacity: 0;width:260px } 
+.writeArticleDiv .choosePictureDiv .inputFileDiv .tipLabel
+{
+	font-size: 13px;
+	color: #707070;
+}
